@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+            background: blanchedalmond;
+            background-image: url("image.png");
+            background-repeat: no-repeat;
+            background-position: center bottom;
+            background-attachment: fixed;
+            }
+
+            input[type=text]{
+                display: block;
+                margin: auto;
+                width: 50%;
+                box-sizing: border-box;
+                font-size: 16px;
+                border-radius: 15px;
+                background-color: antiquewhite;
+                background-image: url('search.png');
+                background-size: 30px;
+                background-repeat: no-repeat;
+                padding: 10px 10px 4px 30px;
+                outline: none;
+                transition: wdith 0.4s ease-in-out;
+            }
+            input[type=text]:hover{
+                width: 80%;
+                margin: auto;
+            }
+
+            ul{
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            li{
+                float: left;
+            }
+
+            li a {
+
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            .dropbtn {
+                color: rgb(255, 255, 255);
+                padding: 10px;
+                font-size: 10px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content{
+                display: none;
+                position: absolute;
+                background-color: white;
+                min-width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a{
+                color: rgb(0, 0, 0);
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {color:rgb(4, 91, 197) ;}
+
+            .dropdown:hover .dropdown-content{
+                display: block;
+            }
+
+            img{
+                width: 100px;
+                display: block;
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+          <ul>
+            <li><img src="being.png" alt=""></li>
+            <li><a>picture</a></li>
+            <li><a>video</a></li>
+            <div class="dropdown">
+            <li class="dropbtn"><a>more</a></li>
+            <div class="dropdown-content">
+                <li><a href="#">map</a></li>
+                <li><a href="#">news</a></li>
+            </div>
+            </div>
+            </ul>
+          <br><br><br><br><br>
+          <input type="text">
+
+       <div class="dropdown">
+        <span class="dropbtn">more</span>
+        <div class="dropdown-content">
+            <a href="#">map</a>
+            <a href="#">news</a>
+        </div>
+    </div>
+    </body>
+
+</html>
